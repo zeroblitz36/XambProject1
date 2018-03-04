@@ -1,0 +1,3082 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<!--xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.vedeteinternationale.ro/vedeteinternationale"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"-->
+<Ontology 
+     ontologyIRI="http://www.vedeteinternationale.ro/vedeteinternationale">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Autori: Posea Maria, Mincu Radu, Puiu Daniel</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ontologie Pagini Web Semantice</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Actiune"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Basist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biografie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cantaret"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chitarist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comedie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComedieRomantica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competitie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecernarePremii"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Echipa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eveniment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fotbalist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horror"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instrumentist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntrecereAtletica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Istoric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JucatorSah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JucatorTenis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeciFotbal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeciSah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeciTenis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Olimpiada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organizatie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personaj"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PiesaClasica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PiesaMuzicala"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PiesaPop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PiesaRnB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PiesaRock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regizor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Romance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScienceFiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sportiv"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tobosar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrupaMuzicala"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vedeta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vocalist"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#apareIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#areCaMembru"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#arePersonaj"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#echipaAreCaMembru"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esteColegCu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esteInterpretatDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esteInterpretataDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esteRegizatDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#faceParteDin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#gazduieste"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interpreteazaPersonaj"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interpreteazaPiesa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participaLa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#regizeaza"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#trupaAreCaMembru"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AnAparitie"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DataNastere"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EchipaParticipanta"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Jucator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LocAparitie"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LocNastere"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Moves"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Scor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Titlu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andrew_Lincoln"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anthony_Hopkins"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BAFTA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beyonce"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Billy_Wilder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brian_May"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brit_Rock_Award"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cadillac_Records"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castor_Troy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dangerously_In_Love"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Darnell_Martin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dave_Murray"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Destinys_Child"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Etta_James"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Face_Off"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Adrian_Popa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Ciprian_Tatarusanu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Collins_Fai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Cornel_Ripa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Cosmin_Matei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Cristian_Tanase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Florin_Nita"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Francesc_Fabregas_Soler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Gerard_Pique_Bernabeu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Ionut_Serban"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Kristijan_Naumovski"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Martin_Bogatinov"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Martin_Montoya_Torralbo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Nicusor_Stanciu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Pinto_Jose_Manuel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Stefan_Barboianu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Valentin_Cojocaru"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fotbal_Víctor_Valdes_Arribas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frank_Darabont"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Freddie_Mercury"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ghost_Rider"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Golden_Globe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grammy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hannibal_Lecter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Iron_Maiden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John_Deacon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John_Huston"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John_Travolta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Johnny_Blaze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kelly_Rowland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Love_Actually"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marilyn_Monroe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeciSah_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeciSah_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeciSah_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeciTenis_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeciTenis_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeciTenis_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeciTenis_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeciTenis_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeciTenis_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeciTenis_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MeciTenis_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meci_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meci_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meci_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meci_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meci_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meci_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meci_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Michelle_Williams"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nicholas_Cage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Queen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Richard_Curtis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Richard_Sherman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rick_Grimes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rock_Glam_Award"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Roger_Taylor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sah_Anatoly_Karpov"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sah_Garry_Kasparov"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sah_Veselin_Topalov"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sean_Archer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Steve_Harris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Survivor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tenis_Maria_Sharapova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tenis_Novak_Djokovic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tenis_Rafael_Nadal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tenis_Roger_Federer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tenis_Simona_Halep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Girl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Misfits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Seven_Year_Itch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Silence_of_the_Lambs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tom_Evell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Walking_Dead"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#We_Are_the_Champions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#We_Will_Rock_You"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Actor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Vedeta"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#interpreteazaPersonaj"/>
+                <Class IRI="#Personaj"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Cantaret"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Vedeta"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#faceParteDinTrupa"/>
+                    <Class IRI="#TrupaMuzicala"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#interpreteazaPiesa"/>
+                    <Class IRI="#PiesaMuzicala"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Regizor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Vedeta"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#regizeaza"/>
+                <Class IRI="#Film"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sportiv"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Vedeta"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#faceParteDinEchipa"/>
+                    <Class IRI="#Echipa"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#participaLa"/>
+                    <Class IRI="#Competitie"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Actiune"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Vedeta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Basist"/>
+        <Class IRI="#Instrumentist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biografie"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cantaret"/>
+        <Class IRI="#Vedeta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chitarist"/>
+        <Class IRI="#Instrumentist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clape"/>
+        <Class IRI="#Instrumentist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comedie"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComedieRomantica"/>
+        <Class IRI="#Comedie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComedieRomantica"/>
+        <Class IRI="#Romance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Competitie"/>
+        <Class IRI="#Eveniment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecernarePremii"/>
+        <Class IRI="#Eveniment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drama"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Echipa"/>
+        <Class IRI="#Organizatie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fotbalist"/>
+        <Class IRI="#Sportiv"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horror"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instrumentist"/>
+        <Class IRI="#Cantaret"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntrecereAtletica"/>
+        <Class IRI="#Competitie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Istoric"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JucatorSah"/>
+        <Class IRI="#Sportiv"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JucatorTenis"/>
+        <Class IRI="#Sportiv"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeciFotbal"/>
+        <Class IRI="#Competitie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeciSah"/>
+        <Class IRI="#Competitie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeciTenis"/>
+        <Class IRI="#Competitie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Olimpiada"/>
+        <Class IRI="#IntrecereAtletica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PiesaClasica"/>
+        <Class IRI="#PiesaMuzicala"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PiesaPop"/>
+        <Class IRI="#PiesaMuzicala"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PiesaRnB"/>
+        <Class IRI="#PiesaMuzicala"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PiesaRock"/>
+        <Class IRI="#PiesaMuzicala"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regizor"/>
+        <Class IRI="#Vedeta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Romance"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScienceFiction"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sportiv"/>
+        <Class IRI="#Vedeta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tobosar"/>
+        <Class IRI="#Instrumentist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrupaMuzicala"/>
+        <Class IRI="#Organizatie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vocalist"/>
+        <Class IRI="#Cantaret"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Competitie"/>
+        <Class IRI="#DecernarePremii"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Echipa"/>
+        <Class IRI="#TrupaMuzicala"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IntrecereAtletica"/>
+        <Class IRI="#MeciFotbal"/>
+        <Class IRI="#MeciTenis"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PiesaClasica"/>
+        <Class IRI="#PiesaPop"/>
+        <Class IRI="#PiesaRock"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Andrew_Lincoln"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Anthony_Hopkins"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DecernarePremii"/>
+        <NamedIndividual IRI="#BAFTA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Beyonce"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vocalist"/>
+        <NamedIndividual IRI="#Beyonce"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Regizor"/>
+        <NamedIndividual IRI="#Billy_Wilder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chitarist"/>
+        <NamedIndividual IRI="#Brian_May"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Clape"/>
+        <NamedIndividual IRI="#Brian_May"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vocalist"/>
+        <NamedIndividual IRI="#Brian_May"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DecernarePremii"/>
+        <NamedIndividual IRI="#Brit_Rock_Award"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biografie"/>
+        <NamedIndividual IRI="#Cadillac_Records"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drama"/>
+        <NamedIndividual IRI="#Cadillac_Records"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Istoric"/>
+        <NamedIndividual IRI="#Cadillac_Records"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personaj"/>
+        <NamedIndividual IRI="#Castor_Troy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PiesaRnB"/>
+        <NamedIndividual IRI="#Dangerously_In_Love"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Regizor"/>
+        <NamedIndividual IRI="#Darnell_Martin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chitarist"/>
+        <NamedIndividual IRI="#Dave_Murray"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vocalist"/>
+        <NamedIndividual IRI="#Dave_Murray"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrupaMuzicala"/>
+        <NamedIndividual IRI="#Destinys_Child"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personaj"/>
+        <NamedIndividual IRI="#Etta_James"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Echipa"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Echipa"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Echipa"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Face_Off"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Adrian_Popa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Ciprian_Tatarusanu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Collins_Fai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Cornel_Ripa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Cosmin_Matei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Cristian_Tanase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Florin_Nita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Francesc_Fabregas_Soler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Gerard_Pique_Bernabeu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Ionut_Serban"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Kristijan_Naumovski"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Martin_Bogatinov"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Martin_Montoya_Torralbo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Nicusor_Stanciu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Pinto_Jose_Manuel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Stefan_Barboianu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Valentin_Cojocaru"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fotbalist"/>
+        <NamedIndividual IRI="#Fotbal_Víctor_Valdes_Arribas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Regizor"/>
+        <NamedIndividual IRI="#Frank_Darabont"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chitarist"/>
+        <NamedIndividual IRI="#Freddie_Mercury"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Clape"/>
+        <NamedIndividual IRI="#Freddie_Mercury"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vocalist"/>
+        <NamedIndividual IRI="#Freddie_Mercury"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Ghost_Rider"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DecernarePremii"/>
+        <NamedIndividual IRI="#Golden_Globe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DecernarePremii"/>
+        <NamedIndividual IRI="#Grammy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personaj"/>
+        <NamedIndividual IRI="#Hannibal_Lecter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrupaMuzicala"/>
+        <NamedIndividual IRI="#Iron_Maiden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Basist"/>
+        <NamedIndividual IRI="#John_Deacon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chitarist"/>
+        <NamedIndividual IRI="#John_Deacon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Clape"/>
+        <NamedIndividual IRI="#John_Deacon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Regizor"/>
+        <NamedIndividual IRI="#John_Huston"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#John_Travolta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personaj"/>
+        <NamedIndividual IRI="#Johnny_Blaze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vocalist"/>
+        <NamedIndividual IRI="#Kelly_Rowland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ComedieRomantica"/>
+        <NamedIndividual IRI="#Love_Actually"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Marilyn_Monroe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciSah"/>
+        <NamedIndividual IRI="#MeciSah_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciSah"/>
+        <NamedIndividual IRI="#MeciSah_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciSah"/>
+        <NamedIndividual IRI="#MeciSah_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciTenis"/>
+        <NamedIndividual IRI="#MeciTenis_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciTenis"/>
+        <NamedIndividual IRI="#MeciTenis_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciTenis"/>
+        <NamedIndividual IRI="#MeciTenis_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciTenis"/>
+        <NamedIndividual IRI="#MeciTenis_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciTenis"/>
+        <NamedIndividual IRI="#MeciTenis_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciTenis"/>
+        <NamedIndividual IRI="#MeciTenis_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciTenis"/>
+        <NamedIndividual IRI="#MeciTenis_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciTenis"/>
+        <NamedIndividual IRI="#MeciTenis_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciFotbal"/>
+        <NamedIndividual IRI="#Meci_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciFotbal"/>
+        <NamedIndividual IRI="#Meci_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciFotbal"/>
+        <NamedIndividual IRI="#Meci_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciFotbal"/>
+        <NamedIndividual IRI="#Meci_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciFotbal"/>
+        <NamedIndividual IRI="#Meci_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciFotbal"/>
+        <NamedIndividual IRI="#Meci_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeciFotbal"/>
+        <NamedIndividual IRI="#Meci_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vocalist"/>
+        <NamedIndividual IRI="#Michelle_Williams"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Nicholas_Cage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrupaMuzicala"/>
+        <NamedIndividual IRI="#Queen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Regizor"/>
+        <NamedIndividual IRI="#Richard_Curtis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personaj"/>
+        <NamedIndividual IRI="#Richard_Sherman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personaj"/>
+        <NamedIndividual IRI="#Rick_Grimes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DecernarePremii"/>
+        <NamedIndividual IRI="#Rock_Glam_Award"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chitarist"/>
+        <NamedIndividual IRI="#Roger_Taylor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tobosar"/>
+        <NamedIndividual IRI="#Roger_Taylor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vocalist"/>
+        <NamedIndividual IRI="#Roger_Taylor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JucatorSah"/>
+        <NamedIndividual IRI="#Sah_Anatoly_Karpov"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JucatorSah"/>
+        <NamedIndividual IRI="#Sah_Garry_Kasparov"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JucatorSah"/>
+        <NamedIndividual IRI="#Sah_Veselin_Topalov"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personaj"/>
+        <NamedIndividual IRI="#Sean_Archer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Basist"/>
+        <NamedIndividual IRI="#Steve_Harris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vocalist"/>
+        <NamedIndividual IRI="#Steve_Harris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PiesaRnB"/>
+        <NamedIndividual IRI="#Survivor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JucatorTenis"/>
+        <NamedIndividual IRI="#Tenis_Maria_Sharapova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JucatorTenis"/>
+        <NamedIndividual IRI="#Tenis_Novak_Djokovic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JucatorTenis"/>
+        <NamedIndividual IRI="#Tenis_Rafael_Nadal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JucatorTenis"/>
+        <NamedIndividual IRI="#Tenis_Roger_Federer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JucatorTenis"/>
+        <NamedIndividual IRI="#Tenis_Simona_Halep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personaj"/>
+        <NamedIndividual IRI="#The_Girl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drama"/>
+        <NamedIndividual IRI="#The_Misfits"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ComedieRomantica"/>
+        <NamedIndividual IRI="#The_Seven_Year_Itch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drama"/>
+        <NamedIndividual IRI="#The_Silence_of_the_Lambs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horror"/>
+        <NamedIndividual IRI="#The_Silence_of_the_Lambs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Tom_Evell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drama"/>
+        <NamedIndividual IRI="#Walking_Dead"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horror"/>
+        <NamedIndividual IRI="#Walking_Dead"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PiesaRock"/>
+        <NamedIndividual IRI="#We_Are_the_Champions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PiesaRock"/>
+        <NamedIndividual IRI="#We_Will_Rock_You"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Andrew_Lincoln"/>
+        <NamedIndividual IRI="#BAFTA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#interpreteazaPersonaj"/>
+        <NamedIndividual IRI="#Anthony_Hopkins"/>
+        <NamedIndividual IRI="#Hannibal_Lecter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteColegCu"/>
+        <NamedIndividual IRI="#Beyonce"/>
+        <NamedIndividual IRI="#Michelle_Williams"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteColegCu"/>
+        <NamedIndividual IRI="#Beyonce"/>
+        <NamedIndividual IRI="#Kelly_Rowland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+        <NamedIndividual IRI="#Beyonce"/>
+        <NamedIndividual IRI="#Destinys_Child"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#interpreteazaPersonaj"/>
+        <NamedIndividual IRI="#Beyonce"/>
+        <NamedIndividual IRI="#Etta_James"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#regizeaza"/>
+        <NamedIndividual IRI="#Billy_Wilder"/>
+        <NamedIndividual IRI="#The_Seven_Year_Itch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+        <NamedIndividual IRI="#Brian_May"/>
+        <NamedIndividual IRI="#Queen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#apareIn"/>
+        <NamedIndividual IRI="#Castor_Troy"/>
+        <NamedIndividual IRI="#Face_Off"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteInterpretataDe"/>
+        <NamedIndividual IRI="#Dangerously_In_Love"/>
+        <NamedIndividual IRI="#Beyonce"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#regizeaza"/>
+        <NamedIndividual IRI="#Darnell_Martin"/>
+        <NamedIndividual IRI="#Cadillac_Records"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDin"/>
+        <NamedIndividual IRI="#Dave_Murray"/>
+        <NamedIndividual IRI="#Iron_Maiden"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Destinys_Child"/>
+        <NamedIndividual IRI="#Grammy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#apareIn"/>
+        <NamedIndividual IRI="#Etta_James"/>
+        <NamedIndividual IRI="#Cadillac_Records"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+        <NamedIndividual IRI="#Meci_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+        <NamedIndividual IRI="#Meci_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+        <NamedIndividual IRI="#Meci_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+        <NamedIndividual IRI="#Meci_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Adrian_Popa"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Ciprian_Tatarusanu"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Collins_Fai"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Cornel_Ripa"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Cosmin_Matei"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Cristian_Tanase"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Florin_Nita"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Francesc_Fabregas_Soler"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Gerard_Pique_Bernabeu"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Ionut_Serban"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Kristijan_Naumovski"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Martin_Bogatinov"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Martin_Montoya_Torralbo"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Nicusor_Stanciu"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Pinto_Jose_Manuel"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Stefan_Barboianu"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Valentin_Cojocaru"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <NamedIndividual IRI="#Fotbal_Víctor_Valdes_Arribas"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#regizeaza"/>
+        <NamedIndividual IRI="#Frank_Darabont"/>
+        <NamedIndividual IRI="#Walking_Dead"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteColegCu"/>
+        <NamedIndividual IRI="#Freddie_Mercury"/>
+        <NamedIndividual IRI="#Brian_May"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteColegCu"/>
+        <NamedIndividual IRI="#Freddie_Mercury"/>
+        <NamedIndividual IRI="#Roger_Taylor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteColegCu"/>
+        <NamedIndividual IRI="#Freddie_Mercury"/>
+        <NamedIndividual IRI="#John_Deacon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+        <NamedIndividual IRI="#Freddie_Mercury"/>
+        <NamedIndividual IRI="#Queen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#apareIn"/>
+        <NamedIndividual IRI="#Hannibal_Lecter"/>
+        <NamedIndividual IRI="#The_Silence_of_the_Lambs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Iron_Maiden"/>
+        <NamedIndividual IRI="#Rock_Glam_Award"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Iron_Maiden"/>
+        <NamedIndividual IRI="#Brit_Rock_Award"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+        <NamedIndividual IRI="#John_Deacon"/>
+        <NamedIndividual IRI="#Queen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#regizeaza"/>
+        <NamedIndividual IRI="#John_Huston"/>
+        <NamedIndividual IRI="#The_Misfits"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#interpreteazaPersonaj"/>
+        <NamedIndividual IRI="#John_Travolta"/>
+        <NamedIndividual IRI="#Sean_Archer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#apareIn"/>
+        <NamedIndividual IRI="#Johnny_Blaze"/>
+        <NamedIndividual IRI="#Ghost_Rider"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+        <NamedIndividual IRI="#Kelly_Rowland"/>
+        <NamedIndividual IRI="#Destinys_Child"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#regizeaza"/>
+        <NamedIndividual IRI="#Love_Actually"/>
+        <NamedIndividual IRI="#Richard_Curtis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#interpreteazaPersonaj"/>
+        <NamedIndividual IRI="#Marilyn_Monroe"/>
+        <NamedIndividual IRI="#The_Girl"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Marilyn_Monroe"/>
+        <NamedIndividual IRI="#Golden_Globe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Marilyn_Monroe"/>
+        <NamedIndividual IRI="#BAFTA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gazduieste"/>
+        <NamedIndividual IRI="#Meci_3"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gazduieste"/>
+        <NamedIndividual IRI="#Meci_3"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gazduieste"/>
+        <NamedIndividual IRI="#Meci_4"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gazduieste"/>
+        <NamedIndividual IRI="#Meci_4"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gazduieste"/>
+        <NamedIndividual IRI="#Meci_5"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gazduieste"/>
+        <NamedIndividual IRI="#Meci_5"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gazduieste"/>
+        <NamedIndividual IRI="#Meci_6"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gazduieste"/>
+        <NamedIndividual IRI="#Meci_6"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+        <NamedIndividual IRI="#Michelle_Williams"/>
+        <NamedIndividual IRI="#Destinys_Child"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#interpreteazaPersonaj"/>
+        <NamedIndividual IRI="#Nicholas_Cage"/>
+        <NamedIndividual IRI="#Johnny_Blaze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#interpreteazaPersonaj"/>
+        <NamedIndividual IRI="#Nicholas_Cage"/>
+        <NamedIndividual IRI="#Castor_Troy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#regizeaza"/>
+        <NamedIndividual IRI="#Richard_Curtis"/>
+        <NamedIndividual IRI="#Love_Actually"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteInterpretatDe"/>
+        <NamedIndividual IRI="#Richard_Sherman"/>
+        <NamedIndividual IRI="#Tom_Evell"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#apareIn"/>
+        <NamedIndividual IRI="#Rick_Grimes"/>
+        <NamedIndividual IRI="#Walking_Dead"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteInterpretataDe"/>
+        <NamedIndividual IRI="#Rick_Grimes"/>
+        <NamedIndividual IRI="#Andrew_Lincoln"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+        <NamedIndividual IRI="#Roger_Taylor"/>
+        <NamedIndividual IRI="#Queen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Sah_Anatoly_Karpov"/>
+        <NamedIndividual IRI="#MeciSah_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Sah_Anatoly_Karpov"/>
+        <NamedIndividual IRI="#MeciSah_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Sah_Garry_Kasparov"/>
+        <NamedIndividual IRI="#MeciSah_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Sah_Garry_Kasparov"/>
+        <NamedIndividual IRI="#MeciSah_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Sah_Garry_Kasparov"/>
+        <NamedIndividual IRI="#MeciSah_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Sah_Veselin_Topalov"/>
+        <NamedIndividual IRI="#MeciSah_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#apareIn"/>
+        <NamedIndividual IRI="#Sean_Archer"/>
+        <NamedIndividual IRI="#Face_Off"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteColegCu"/>
+        <NamedIndividual IRI="#Steve_Harris"/>
+        <NamedIndividual IRI="#Dave_Murray"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#faceParteDin"/>
+        <NamedIndividual IRI="#Steve_Harris"/>
+        <NamedIndividual IRI="#Iron_Maiden"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteInterpretataDe"/>
+        <NamedIndividual IRI="#Survivor"/>
+        <NamedIndividual IRI="#Destinys_Child"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Maria_Sharapova"/>
+        <NamedIndividual IRI="#MeciTenis_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Maria_Sharapova"/>
+        <NamedIndividual IRI="#MeciTenis_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Rafael_Nadal"/>
+        <NamedIndividual IRI="#MeciTenis_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Rafael_Nadal"/>
+        <NamedIndividual IRI="#MeciTenis_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Rafael_Nadal"/>
+        <NamedIndividual IRI="#MeciTenis_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Roger_Federer"/>
+        <NamedIndividual IRI="#MeciTenis_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Roger_Federer"/>
+        <NamedIndividual IRI="#MeciTenis_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Roger_Federer"/>
+        <NamedIndividual IRI="#MeciTenis_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Roger_Federer"/>
+        <NamedIndividual IRI="#MeciTenis_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Roger_Federer"/>
+        <NamedIndividual IRI="#MeciTenis_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Simona_Halep"/>
+        <NamedIndividual IRI="#MeciTenis_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tenis_Simona_Halep"/>
+        <NamedIndividual IRI="#MeciTenis_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participaLa"/>
+        <NamedIndividual IRI="#Tom_Evell"/>
+        <NamedIndividual IRI="#Golden_Globe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteInterpretataDe"/>
+        <NamedIndividual IRI="#We_Are_the_Champions"/>
+        <NamedIndividual IRI="#Queen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esteInterpretataDe"/>
+        <NamedIndividual IRI="#We_Will_Rock_You"/>
+        <NamedIndividual IRI="#Queen"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Andrew_Lincoln"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Andrew Lincoln</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Anthony_Hopkins"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anthony Hopkins</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#BAFTA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BAFTA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Beyonce"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">September 4, 1981</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Beyonce"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Houston, Texas, U.S.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Beyonce"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Beyonce Knowles</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Billy_Wilder"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Billy Wilder</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Brian_May"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">19 July 1947</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Brian_May"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hampton, London, England, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Brian_May"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Brian May</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Brit_Rock_Award"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Brit Rock Award</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#Cadillac_Records"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#Cadillac_Records"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cadillac Records</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Castor_Troy"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Castor Troy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#Dangerously_In_Love"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#Dangerously_In_Love"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dangerously In Love</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Darnell_Martin"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Darnell Martin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Dave_Murray"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dave Murray</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#Destinys_Child"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Destinys_Child"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Destiny&#39;s Child</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Etta_James"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Etta James</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1899</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocAparitie"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#FC_Barcelona"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1948</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocAparitie"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bucuresti</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#FC_Dinamo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Dinamo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1947</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocAparitie"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bucuresti</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#FC_Steaua"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Steaua</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#Face_Off"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Face/Off</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Adrian_Popa"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">24 July 1988</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Adrian_Popa"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Horezu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Adrian_Popa"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Adrian Popa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Ciprian_Tatarusanu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">09 Februarie 1986</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Ciprian_Tatarusanu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bucuresti</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Ciprian_Tatarusanu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ciprian Tatarusanu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Collins_Fai"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">13 August 1992</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Collins_Fai"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bamenda, Cameroon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Collins_Fai"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Collins Fai</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Cornel_Ripa"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">16 January 1990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Cornel_Ripa"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Galati</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Cornel_Ripa"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cornel Ripa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Cosmin_Matei"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Targoviste</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Cosmin_Matei"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">30 September 1991</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Cosmin_Matei"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cosmin Matei</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Cristian_Tanase"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">18 Februarie 1987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Cristian_Tanase"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pitesti</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Cristian_Tanase"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cristian Tanase</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Florin_Nita"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">3 July 1987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Florin_Nita"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bucuresti</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Florin_Nita"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Florin Nita</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Francesc_Fabregas_Soler"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">4 May 1987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Francesc_Fabregas_Soler"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Arenys de Mar, Spain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Francesc_Fabregas_Soler"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Francesc Fàbregas Soler</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Gerard_Pique_Bernabeu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2 February 1987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Gerard_Pique_Bernabeu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Barcelona, Spain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Gerard_Pique_Bernabeu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gerard Piqué Bernabeu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Ionut_Serban"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">7 August 1995</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Ionut_Serban"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ploiesti</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Ionut_Serban"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ionuț Șerban</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Kristijan_Naumovski"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">17 September 1988</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Kristijan_Naumovski"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Skopje, Macedonia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Kristijan_Naumovski"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kristijan Naumovski</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Martin_Bogatinov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">26 April 1986</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Martin_Bogatinov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kratovo, Macedonia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Martin_Bogatinov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Martin Bogatinov</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Martin_Montoya_Torralbo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gavà, Spain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Martin_Montoya_Torralbo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">14 April 1991</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Martin_Montoya_Torralbo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Martín Montoya Torralbo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Nicusor_Stanciu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">07 Mai 1993</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Nicusor_Stanciu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nicusor Stanciu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Pinto_Jose_Manuel"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">8 November 1975</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Pinto_Jose_Manuel"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">El Puerto de Santa María, Spain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Pinto_Jose_Manuel"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pinto José Manuel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Stefan_Barboianu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">24 January 1988</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Stefan_Barboianu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Craiova</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Stefan_Barboianu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ștefan Bărboianu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Valentin_Cojocaru"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1 October 1995</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Valentin_Cojocaru"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bucuresti</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Valentin_Cojocaru"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Valentin Cojocaru</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Fotbal_Víctor_Valdes_Arribas"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1982-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Fotbal_Víctor_Valdes_Arribas"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Llobregat, Spain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Fotbal_Víctor_Valdes_Arribas"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Víctor Valdés Arribas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Frank_Darabont"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Frank Darabont</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Freddie_Mercury"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">5 September 1946</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Freddie_Mercury"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Stone Town, Zanzibar (now Tanzania)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Freddie_Mercury"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Freddie Mercury</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#Ghost_Rider"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ghost Rider</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#Golden_Globe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Golden Globe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Grammy"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Grammy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Hannibal_Lecter"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dr. Hannibal Lecter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Iron_Maiden"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Iron Maiden</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#John_Deacon"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">19 August 1951</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#John_Deacon"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Oadby, Leicester, England</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#John_Deacon"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">John Deacon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#John_Huston"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">John Huston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#John_Travolta"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">John Travolta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Johnny_Blaze"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Johnny Blaze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Kelly_Rowland"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> February 11, 1981</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Kelly_Rowland"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Atlanta, Georgia, United States</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Kelly_Rowland"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kelly Rowland</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#Love_Actually"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#Love_Actually"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Love Actually</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Marilyn_Monroe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">June 1, 1926</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Marilyn_Monroe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Los Angeles, California, U.S.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Marilyn_Monroe"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Marilyn Monroe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#MeciSah_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1984</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciSah_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anatoly Karpov</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciSah_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Garry Kasparov</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Moves"/>
+        <NamedIndividual IRI="#MeciSah_1"/>
+        <Literal datatypeIRI="&xsd;integer">59</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#MeciSah_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0 - 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#MeciSah_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciSah_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Garry Kasparov</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciSah_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anatoly Karpov</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Moves"/>
+        <NamedIndividual IRI="#MeciSah_2"/>
+        <Literal datatypeIRI="&xsd;integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#MeciSah_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1 - 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#MeciSah_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1996</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciSah_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Veselin Topalov</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciSah_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Garry Kasparov</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Moves"/>
+        <NamedIndividual IRI="#MeciSah_3"/>
+        <Literal datatypeIRI="&xsd;integer">63</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#MeciSah_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1 - 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#MeciTenis_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">07/09/2006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Roger Federer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rafael Nadal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#MeciTenis_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">3 : 1  (6 : 0) (7 : 6) (6 : 7) (6 : 3)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#MeciTenis_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">02/01/2009</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Roger Federer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rafael Nadal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#MeciTenis_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">3 : 2  (7 : 5) (3 : 6) (7 : 6) (3 : 6) (6 : 2)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#MeciTenis_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">11/10/2013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Roger Federer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rafael Nadal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#MeciTenis_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2 : 0  (7 : 5) (6 : 3)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#MeciTenis_4"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">09/06/2008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_4"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Novak Djokovic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_4"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Roger Federer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#MeciTenis_4"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1 : 3  (3 : 6) (7 : 5) (5 : 7) (2 : 6)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#MeciTenis_5"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">09/11/2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_5"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Roger Federer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_5"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Novak Djokovic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#MeciTenis_5"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">3 : 2  (5 : 7) (6 : 1) (5 : 7) (6 : 2) (7 : 5)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#MeciTenis_6"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">07/03/2011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_6"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rafael Nadal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_6"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Novak Djokovic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#MeciTenis_6"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1 : 3  (4 : 6) (1 : 6) (6 : 1) (3 : 6)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#MeciTenis_7"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">03/13/2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_7"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Simona Halep</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Jucator"/>
+        <NamedIndividual IRI="#MeciTenis_7"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Maria Sharapova</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#MeciTenis_7"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0 : 2  (3 : 6) (4 : 6)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#MeciTenis_8"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10/01/2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#MeciTenis_8"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Simona Halep</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#MeciTenis_8"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Maria Sharapova</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#MeciTenis_8"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0 : 2  (5 : 7) (5 : 7)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#Meci_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">27 martie 2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Steaua</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Dinamo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#Meci_1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">5 - 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#Meci_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2010-03-17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Steaua</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Dinamo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#Meci_2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2 - 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#Meci_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1986-05-07</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Steaua</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#Meci_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0 - 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#Meci_4"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2007-04-07</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_4"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Steaua</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_4"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Dinamo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#Meci_4"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2 - 4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#Meci_5"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1977-09-28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_5"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_5"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Steaua</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#Meci_5"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1 - 3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#Meci_6"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1977-09-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_6"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_6"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Steaua</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#Meci_6"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1 - 5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Data"/>
+        <NamedIndividual IRI="#Meci_7"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2012-08-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_7"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EchipaParticipanta"/>
+        <NamedIndividual IRI="#Meci_7"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FC Dinamo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Scor"/>
+        <NamedIndividual IRI="#Meci_7"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0 - 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Michelle_Williams"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">July 23, 1980</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Michelle_Williams"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rockford, Illinois, United States</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Michelle_Williams"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Michelle Williams</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Nicholas_Cage"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nicholas Cage</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#Queen"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1970</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Queen"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Queen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#Richard_Curtis"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Richard Curtis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Richard_Sherman"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Richard Sherman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Rick_Grimes"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rick Grimes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Rock_Glam_Award"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rock Glam Award</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Roger_Taylor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">26 July 1949</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Roger_Taylor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dersingham, Norfolk, England</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Roger_Taylor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Roger Taylor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Sah_Anatoly_Karpov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">May 23, 1951</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Sah_Anatoly_Karpov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Zlatoust, Russian SFSR, Soviet Union</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Sah_Anatoly_Karpov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anatoly Karpov</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Sah_Garry_Kasparov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">13 April 1963</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Sah_Garry_Kasparov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Baku, Azerbaijan SSR, Soviet Union</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Sah_Garry_Kasparov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Garry Kasparov</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Sah_Veselin_Topalov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">15 March 1975</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Sah_Veselin_Topalov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rousse, Bulgaria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Sah_Veselin_Topalov"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Veselin Topalov</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Sean_Archer"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sean Archer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Steve_Harris"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Steve Harris</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#Survivor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Survivor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Survivor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Tenis_Maria_Sharapova"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">April 19, 1987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Tenis_Maria_Sharapova"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nyagan, Russian SFSR, Soviet Union</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Tenis_Maria_Sharapova"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Maria Sharapova</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Tenis_Novak_Djokovic"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">22 May 1987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Tenis_Novak_Djokovic"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">22 May 1987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Tenis_Novak_Djokovic"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Novak Djokovic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Tenis_Rafael_Nadal"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">3 June 1986</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Tenis_Rafael_Nadal"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Manacor, Balearic Islands, Spain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Tenis_Rafael_Nadal"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rafael Nadal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Tenis_Roger_Federer"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">8 August 1981</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Tenis_Roger_Federer"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Basel, Switzerland</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Tenis_Roger_Federer"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Roger Federer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataNastere"/>
+        <NamedIndividual IRI="#Tenis_Simona_Halep"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">27 September 1991</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocNastere"/>
+        <NamedIndividual IRI="#Tenis_Simona_Halep"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Constanța</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Tenis_Simona_Halep"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Simona Halep</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#The_Girl"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Girl</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#The_Misfits"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1961</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#The_Misfits"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Misfits</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#The_Seven_Year_Itch"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1955</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#The_Seven_Year_Itch"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Seven Year Itch</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#The_Silence_of_the_Lambs"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Silence of the Lambs</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nume"/>
+        <NamedIndividual IRI="#Tom_Evell"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tom Evell</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#Walking_Dead"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Walking Dead</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#We_Are_the_Champions"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1977</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#We_Are_the_Champions"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">We Are the Champions</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AnAparitie"/>
+        <NamedIndividual IRI="#We_Will_Rock_You"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1977</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Titlu"/>
+        <NamedIndividual IRI="#We_Will_Rock_You"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">We Will Rock You</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#echipaAreCaMembru"/>
+        <ObjectProperty IRI="#areCaMembru"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#faceParteDin"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <ObjectProperty IRI="#faceParteDin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+        <ObjectProperty IRI="#faceParteDin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#trupaAreCaMembru"/>
+        <ObjectProperty IRI="#areCaMembru"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#apareIn"/>
+        <ObjectProperty IRI="#arePersonaj"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#areCaMembru"/>
+        <ObjectProperty IRI="#faceParteDin"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <ObjectProperty IRI="#echipaAreCaMembru"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#esteInterpretatDe"/>
+        <ObjectProperty IRI="#interpreteazaPersonaj"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#esteInterpretataDe"/>
+        <ObjectProperty IRI="#interpreteazaPiesa"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#esteRegizatDe"/>
+        <ObjectProperty IRI="#regizeaza"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#trupaAreCaMembru"/>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#gazduieste"/>
+        <ObjectProperty IRI="#participaLa"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#esteColegCu"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#esteColegCu"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#apareIn"/>
+        <Class IRI="#Personaj"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#areCaMembru"/>
+        <Class IRI="#Organizatie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#arePersonaj"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#echipaAreCaMembru"/>
+        <Class IRI="#Echipa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esteColegCu"/>
+        <Class IRI="#Vedeta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esteInterpretatDe"/>
+        <Class IRI="#Personaj"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esteInterpretataDe"/>
+        <Class IRI="#PiesaMuzicala"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esteRegizatDe"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#faceParteDin"/>
+        <Class IRI="#Vedeta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <Class IRI="#Sportiv"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+        <Class IRI="#Cantaret"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#gazduieste"/>
+        <Class IRI="#Eveniment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#interpreteazaPersonaj"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#interpreteazaPiesa"/>
+        <ObjectUnionOf>
+            <Class IRI="#Cantaret"/>
+            <Class IRI="#TrupaMuzicala"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participaLa"/>
+        <ObjectUnionOf>
+            <Class IRI="#Organizatie"/>
+            <Class IRI="#Vedeta"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#regizeaza"/>
+        <Class IRI="#Regizor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#trupaAreCaMembru"/>
+        <Class IRI="#TrupaMuzicala"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#apareIn"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#areCaMembru"/>
+        <Class IRI="#Vedeta"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#arePersonaj"/>
+        <Class IRI="#Personaj"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#echipaAreCaMembru"/>
+        <Class IRI="#Sportiv"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esteColegCu"/>
+        <Class IRI="#Vedeta"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esteInterpretatDe"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esteInterpretataDe"/>
+        <ObjectUnionOf>
+            <Class IRI="#Cantaret"/>
+            <Class IRI="#TrupaMuzicala"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esteRegizatDe"/>
+        <Class IRI="#Regizor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#faceParteDin"/>
+        <Class IRI="#Organizatie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#faceParteDinEchipa"/>
+        <Class IRI="#Echipa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#faceParteDinTrupa"/>
+        <Class IRI="#TrupaMuzicala"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#gazduieste"/>
+        <ObjectUnionOf>
+            <Class IRI="#Organizatie"/>
+            <Class IRI="#Vedeta"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interpreteazaPersonaj"/>
+        <Class IRI="#Personaj"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interpreteazaPiesa"/>
+        <Class IRI="#PiesaMuzicala"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participaLa"/>
+        <Class IRI="#Eveniment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#regizeaza"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#trupaAreCaMembru"/>
+        <Class IRI="#Cantaret"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#LocAparitie"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DataNastere"/>
+        <Class IRI="#Vedeta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#LocNastere"/>
+        <Class IRI="#Vedeta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nume"/>
+        <ObjectUnionOf>
+            <Class IRI="#Eveniment"/>
+            <Class IRI="#Organizatie"/>
+            <Class IRI="#Personaj"/>
+            <Class IRI="#Vedeta"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Titlu"/>
+        <ObjectUnionOf>
+            <Class IRI="#Film"/>
+            <Class IRI="#PiesaMuzicala"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#DataNastere"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LocNastere"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Moves"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Nume"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Titlu"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
