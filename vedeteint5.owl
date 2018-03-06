@@ -8,13 +8,13 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
-<!--xmlns="http://www.w3.org/2002/07/owl#"
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.vedeteinternationale.ro/vedeteinternationale"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"-->
-<Ontology 
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      ontologyIRI="http://www.vedeteinternationale.ro/vedeteinternationale">
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
