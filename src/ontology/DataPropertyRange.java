@@ -1,12 +1,12 @@
 package ontology;
 
-import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "DataPropertyRange")
 public class DataPropertyRange {
-    @XmlAttribute(name="DataProperty")
+    @XmlElement(name="DataProperty")
     public DataProperty dataProperty;
-    @XmlAttribute(name="Datatype")
+    @XmlElement(name="Datatype")
     public Datatype datatype;
 }
