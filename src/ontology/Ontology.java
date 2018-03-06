@@ -7,21 +7,8 @@ import java.util.ArrayList;
 
 @XmlRootElement(name="Ontology")
 public class Ontology {
-    //@XmlAttribute(name="xmlns")
-    //public String xmlns;
-    //@XmlAttribute(name="xml:base")
-    //public String xml_base;
-    //@XmlAttribute(name="xmlns:xsd")
-    //public String xmlns_xsd;
-    //@XmlAttribute(name="xmlns:xml")
-    //public String xmlns_xml;
-    //@XmlAttribute(name="xmlns:rdfs")
-    //public String xmlns_rdfs;
-    //@XmlAttribute(name="xmlns:rdf")
-    //public String xmlns_rdf;
     @XmlAttribute
     public String ontologyIRI;
-
     @XmlElement(name="Prefix")
     public ArrayList<Prefix> prefixArrayList;
     @XmlElement(name="Annotation")
