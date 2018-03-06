@@ -9,4 +9,6 @@ public class ObjectPropertyDomain {
     public ObjectProperty objectProperty;
     @XmlElement(name="Class")
     public ClassXmlElement classXmlElement;
+    @XmlElement(name="ObjectUnionOf")
+    public ObjectUnionOf objectUnionOf;
 }

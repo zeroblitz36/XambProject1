@@ -14,13 +14,25 @@ import java.io.File;
 public class Main {
     private static void parseToScreen(Object o){
         try {
-            File file = new File("test.xml");
+
             JAXBContext jaxbContext = JAXBContext.newInstance(o.getClass());
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,true);
             //jaxbMarshaller.marshal(l,file);
             jaxbMarshaller.marshal(o,System.out);
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+    }
+    private static void parseToFile(Object o,String filePath){
+        File file = new File(filePath);
+        try {
+            JAXBContext jaxbContext = JAXBContext.newInstance(o.getClass());
+            Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+
+            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,true);
+            jaxbMarshaller.marshal(o,file);
         } catch (JAXBException e) {
             e.printStackTrace();
         }
@@ -52,7 +64,7 @@ public class Main {
             Unmarshaller unmarshaller = context.createUnmarshaller();
             Ontology ontology = (Ontology) unmarshaller.unmarshal(new File("vedeteint5.owl"));
             parseToScreen(ontology);
-
+            parseToFile(ontology,"vedete_out.owl");
         } catch (JAXBException e) {
             e.printStackTrace();
         }

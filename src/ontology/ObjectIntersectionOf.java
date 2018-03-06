@@ -9,4 +9,6 @@ public class ObjectIntersectionOf {
     ClassXmlElement classXmlElement;
     @XmlElement(name="ObjectSomeValuesFrom")
     ObjectSomeValuesFrom objectSomeValuesFrom;
+    @XmlElement(name="ObjectUnionOf")
+    public ObjectUnionOf objectUnionOf;
 }

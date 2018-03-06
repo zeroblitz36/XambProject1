@@ -9,4 +9,8 @@ public class Declaration {
     public ClassXmlElement classXmlElement;
     @XmlElement(name="ObjectProperty")
     public ObjectProperty objectProperty;
+    @XmlElement(name="DataProperty")
+    public DataProperty dataProperty;
+    @XmlElement(name="NamedIndividual")
+    public NamedIndividual namedIndividual;
 }

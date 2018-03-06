@@ -8,4 +8,6 @@ import java.util.ArrayList;
 public class ObjectUnionOf {
     @XmlElement(name="Class")
     public ArrayList<ClassXmlElement> classXmlElementArrayList;
+    @XmlElement(name="ObjectSomeValuesFrom")
+    public ArrayList<ObjectSomeValuesFrom> objectSomeValuesFromArrayList;
 }
